@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  myparser:
+    build: .
+    container_name: ya_parser
+    command: python ya-parser.py
+    volumes:
+      - .:/code/
+
+
+
+
+
