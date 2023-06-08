@@ -1,13 +1,9 @@
 import datetime
-import logging
 import os
 import random
 import time
 from dotenv import load_dotenv
 
-load_dotenv('input.txt')
-
-import requests
 from selenium.webdriver import ActionChains, Keys
 from selenium import webdriver
 from selenium.common import TimeoutException
@@ -15,10 +11,9 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
-import re
-import undetected_chromedriver as uc
 from selenium.webdriver.chrome.service import Service
 
+load_dotenv('input.txt')
 
 def get_browser() -> webdriver:
     options = Options()
@@ -34,6 +29,7 @@ def get_browser() -> webdriver:
     driver = webdriver.Chrome(service=s, options=options)
     driver.set_page_load_timeout(20)
     return driver
+
 
 def get_page(text, target, region):
     try:

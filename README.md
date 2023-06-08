@@ -15,12 +15,12 @@ git clone https://github.com/Maniackaa/ya-parser.git
 cd ya-parser
 ```
 
-Создать и активировать виртуальное окружение:
+Создать виртуальное окружение: 
 
 ```
 python -m venv venv
 ```
-
+Активировать  виртуальное окружение:
 ```
 venv\Scripts\activate
 ```
