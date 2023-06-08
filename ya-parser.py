@@ -82,7 +82,6 @@ def get_page(text, target, region):
 
 
 if __name__ == '__main__':
-    import chromedriver_autoinstaller
     target = os.getenv('TARGET')
     texts = os.getenv('TEXT').split(',')
     region =  os.getenv('REGION')
